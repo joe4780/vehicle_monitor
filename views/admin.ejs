@@ -1,0 +1,29 @@
+<% include ./partials/header %>
+<link rel="stylesheet" href="./../public/css/admin.css">
+<div class="container-fluid">
+    <h5 class="alert alert-info text-center">Veichle by types</h5>
+    <div class="type-chart">
+        <canvas id="type-chart"></canvas>
+    </div>
+</div>
+
+<div class="container">
+    <div id="flash">
+
+    </div>
+    <div class="form-group row">
+        <div id="v-image">
+            <img alt="v-photo" id="photo">
+        </div>
+
+        <div class="col-sm-3">
+            <label for="v-number">Vehicle number</label>
+            <input type="text" style="text-transform:uppercase" name="v-number" id="v-number" class="form-control">
+            <button type="button" onclick="getVehicle()" class="btn btn-info">Get data</button>
+        </div>
+
+    </div>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script src="./../public/js/charts.js"></script>

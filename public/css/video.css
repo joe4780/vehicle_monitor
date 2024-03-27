@@ -1,0 +1,29 @@
+.player{
+    width: 50%;
+    margin: 10px 25% 20px 25%;
+}
+
+.myform{
+    background-color: #eee;
+}
+
+.mycanvas{
+    border: 1px solid black;
+    width: 40%;
+    margin: 10px 30% 0 30%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#flash{
+    width: 70%;
+    margin: 10px 15% 10px 15%;
+    box-sizing: border-box;
+    text-align: center;
+}
+@media(max-width:699px) {
+    .player{
+        width: 90%;
+        margin: 10px 5% 20px 5%;
+    }
+}
